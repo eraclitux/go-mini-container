@@ -45,3 +45,10 @@ add in Dockerfile:
 FROM alpine
 RUN apk add --no-cache ca-certificates && update-ca-certificates
 ```
+
+A word of caution
+-----------------
+
+Images built with this method have not been thoroughly tested in production environments,
+the use of `musl libc` can have unpredictable side effects. Instrument code and infrastructure
+and use *canary deploy* to spot possible issues.
