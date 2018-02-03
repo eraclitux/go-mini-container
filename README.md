@@ -1,6 +1,8 @@
 go-mini-container
 =================
 
+[![Docker Build Status](https://img.shields.io/docker/build/eraclitux/go-mini-container.svg)](https://hub.docker.com/r/eraclitux/go-mini-container/)
+
 Maintain Docker images small can help in many cases. It reduces the bandwidth required by registry and dramatically speed up deployment in large clusters.
 To run a Go binary a full fledged distro with `libc` is generally required. Unfortunately most linux official images are more than 100MB, [Alpine Linux](https://alpinelinux.org/) to the rescue, this amazing distro is less than 5MB.
 
